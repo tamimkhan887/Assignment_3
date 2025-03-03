@@ -20,7 +20,7 @@
 
 <body class="font-family">
     <header class="container mx-auto">
-        <nav class="mt-12 mx-2 md:mx-12 lg:mx-32">
+        <nav class="mt-8 lg:mt-12 mx-2 md:mx-12 lg:mx-32">
             <div class="navbar">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -32,7 +32,7 @@
                             </svg>
                         </div>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content flex gap-3 lg:gap-8  z-1 mt-3 w-52 p-2  text-base font-bold">
+                            class="menu menu-sm dropdown-content flex gap-3 lg:gap-8 z-1 mt-3 p-2  text-base font-bold">
                             <li class="lg:text-[#FF4240]"><a>Home</a></li>
                             <li><a>About</a></li>
                             <li><a>Pages</a></li>
@@ -54,12 +54,53 @@
                 </div>
                 <div class="navbar-end flex gap-2">
                     <button class="hidden lg:flex btn btn-ghost btn-circle">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /> </svg>
-                      </button>
-                    <a class="btn bd-[#FF4240]">Get Ticket</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                    <a class="btn bg-[#FF4240] text-white text-xl font-bold py-4 px-6 rounded-lg h-14">Get Ticket</a>
                 </div>
             </div>
         </nav>
+
+        <div class="mt-8 lg:mt-14 mx-3 md:mx-12 lg:mx-32 relative">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative  w-full">
+                    <img src="Images/1.png" class="w-full h-auto lg:h-[550px]" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/2.png" class="w-full h-auto lg:h-[550px]" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="Images/3.png" class="w-full h-auto lg:h-[550px]" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="Images/4.png" class="w-full h-auto lg:h-[550px]" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#131318] space-y-4 p-8 rounded-2xl w-5/12">
+                <h3 class="text-white text-2xl font-bold">Meet all the heroes from the field</h3>
+                <p class="text-[#FFFFFF99] ">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+        </div>
     </header>
 
     <main>
